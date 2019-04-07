@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver    
+    url: jdbc:postgresql://206.189.185.138/tcs2
+    username: modulo2
+    password: modulo2b
+
+server:
+   port: 8080
+   
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://modulo-alumno-eureka.herokuapp.com/eureka #http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    nonSecurePort: 8080
+
+banner:
+  location: classpath:/example/banner.txt
